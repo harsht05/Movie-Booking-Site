@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/plugins/all_cdn.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend class="field">
+                <h1>Login Form</h1>
+            </legend>
+            <form class="login" id="loginForm">
+                <div class="user-pass">
+                    <label for="username">Username</label>
+                    <input type="text" class="username form-control" id="username" name="username">
+                </div>
+                <div class="user-pass">
+                    <label for="password">Password</label>
+                    <input type="password" class="password form-control" id="password" name="password">
+                </div>
+                <span class="error" id="loginError"></span>
+                <div class="btn-flex">
+                    <button type="submit" class="sub btn btn-primary">Login</button>
+                    <button type="button" class="sub btn btn-primary">
+                        <a href="register.html" style="color: white; text-decoration: none;">Sign Up</a>
+                    </button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+        
+    <script src="../js/controller/login_controller.js" type="module"></script>
+
+</body>
+</html>

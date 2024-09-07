@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ticket Booking</title>
+    <script src="../js/plugins/all_cdn.js"></script>
+    <link rel="stylesheet" href="../css/meals.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid drama_container" id="drama_container">
+      <!--FIRST NAVBAR INCLUDING SEARCH BAR LOGIN LOCATION LOGO  -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BOOK ME</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--SECOND NAVBAR LINKS TO DIFFERENT PAGE -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Drama</a>
+        </li>
+      </ul>
+
+      <div class="container mt-4">
+        <div class="row card_container">
+          <div class="col-md-8">
+            <h2 class="text-center mb-4 heading">Meal Add-ons</h2>
+
+            <!-- Meal Option 1 -->
+            <div class="card">
+              <div class="meal-details">
+                <img
+                  src="../images/meals/Coke.png"
+                  class="meal-img"
+                  alt="Meal Option 1 Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coke</h5>
+                  <p class="card-text">Soft drink</p>
+                  <p class="card-text">Price: ₹150</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-item="Soft drink"
+                    data-price="150"
+                    data-quantity="meal1Quantity"
+                  >
+                    Add to Cart
+                  </button>
+                  <div class="quantity-bar" id="meal1Quantity">
+                    <button
+                      class="btn btn-secondary decrease-quantity"
+                      style="display: none"
+                    >
+                      -
+                    </button>
+                    <span>0</span>
+                    <button
+                      class="btn btn-secondary increase-quantity"
+                      style="display: none"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meal Option 2 -->
+            <div class="card">
+              <div class="meal-details">
+                <img
+                  src="../images/meals/NachosCombo.png"
+                  class="meal-img"
+                  alt="Meal Option 2 Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nachos Combo</h5>
+                  <p class="card-text">Nachos, Popcorn and Drink</p>
+                  <p class="card-text">Price: 240</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-item="Nachos Combo"
+                    data-price="200"
+                    data-quantity="meal2Quantity"
+                  >
+                    Add to Cart
+                  </button>
+                  <div class="quantity-bar" id="meal2Quantity">
+                    <button
+                      class="btn btn-secondary decrease-quantity"
+                      style="display: none"
+                    >
+                      -
+                    </button>
+                    <span>0</span>
+                    <button
+                      class="btn btn-secondary increase-quantity"
+                      style="display: none"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meal Option 3 -->
+            <div class="card">
+              <div class="meal-details">
+                <img
+                  src="../images/meals/Cappuccino.png"
+                  class="meal-img"
+                  alt="Meal Option 3 Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cappuccino</h5>
+                  <p class="card-text">Makes you feel refreshered</p>
+                  <p class="card-text">Price: ₹120</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-item="Cappuccino"
+                    data-price="120"
+                    data-quantity="meal3Quantity"
+                  >
+                    Add to Cart
+                  </button>
+                  <div class="quantity-bar" id="meal3Quantity">
+                    <button
+                      class="btn btn-secondary decrease-quantity"
+                      style="display: none"
+                    >
+                      -
+                    </button>
+                    <span>0</span>
+                    <button
+                      class="btn btn-secondary increase-quantity"
+                      style="display: none"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meal Option 4 -->
+            <div class="card">
+              <div class="meal-details">
+                <img
+                  src="../images/meals/Nachos.png"
+                  class="meal-img"
+                  alt="Meal Option 4 Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nachos</h5>
+                  <p class="card-text">Tasty treat to feed your hunger with!!</p>
+                  <p class="card-text">Price: ₹180</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-item="Nachos"
+                    data-price="180"
+                    data-quantity="meal4Quantity"
+                  >
+                    Add to Cart
+                  </button>
+                  <div class="quantity-bar" id="meal4Quantity">
+                    <button
+                      class="btn btn-secondary decrease-quantity"
+                      style="display: none"
+                    >
+                      -
+                    </button>
+                    <span>0</span>
+                    <button
+                      class="btn btn-secondary increase-quantity"
+                      style="display: none"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meal Option 5 -->
+            <div class="card">
+              <div class="meal-details">
+                <img
+                  src="../images/meals/FriendsCombof.png"
+                  class="meal-img"
+                  alt="Meal Option 5 Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Combo for Friends</h5>
+                  <p class="card-text">You can make the combo as you like!!</p>
+                  <p class="card-text">Price: ₹360</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-item="Combo for Friends"
+                    data-price="160"
+                    data-quantity="meal5Quantity"
+                  >
+                    Add to Cart
+                  </button>
+                  <div class="quantity-bar" id="meal5Quantity">
+                    <button
+                      class="btn btn-secondary decrease-quantity"
+                      style="display: none"
+                    >
+                      -
+                    </button>
+                    <span>0</span>
+                    <button
+                      class="btn btn-secondary increase-quantity"
+                      style="display: none"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="summary">
+              <h4>Summary</h4>
+              <p id="ticketCharges">Ticket Charges: ₹0</p>
+              <p id="convenienceFee">Convenience Fee: ₹0</p>
+              <hr />
+              <p id="subTotal">Subtotal: ₹0</p>
+              <p id="mealCharges">Meal Charges: ₹0</p>
+              <p id="mealCount">Meals: None</p>
+              <hr />
+              <p id="totalPrice">Total Price: ₹0</p>
+
+              <!-- Proceed button -->
+              <button
+                class="btn btn-success mt-2"
+                id="proceedButton"
+                
+              >
+                Proceed
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/controller/meal_controller.js" type="module"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/plugins/all_cdn.js"></script>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend class="field">
+                <h1>Registration Form</h1>
+            </legend>
+            <form class="login mb-3" id="registrationForm">
+                <div class="user-pass">
+                    <label for="username">Username</label>
+                    <input type="text" class="username form-control input" id="username" name="username">
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="user-pass">
+                    <label for="password">Password</label>
+                    <input type="password" class="password form-control input" id="password" name="password">
+                    <span id="passError" class="error"></span>
+                </div>
+                <div class="user-pass">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" class="password form-control input" id="cpassword" name="cpassword">
+                    <span id="notSameError" class="error"></span>
+                </div>
+                <div class="user-pass">
+                    <label for="email">Email</label>
+                    <input type="email" class="email form-control input" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div class="user-pass">
+                    <label for="phone-no">Phone No.</label>
+                    <input type="number" class="phone-no form-control input" id="phone-no" name="phone_no">
+                    <span id="mobileError" class="error"></span>
+                </div>
+                <div class="user-pass">
+                    <label for="city">City</label>
+                    <input type="text" class="city form-control input" id="city" name="city">
+                </div>
+
+                <div class="checkbox">
+                    <label>Your Interest</label>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="thrillerCheckbox" name="movieGenre"
+                            value="thriller">
+                        <label class="form-check-label" for="thrillerCheckbox">Thriller</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="comedyCheckbox" name="movieGenre"
+                            value="comedy">
+                        <label class="form-check-label" for="comedyCheckbox">Comedy</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="actionCheckbox" name="movieGenre"
+                            value="action">
+                        <label class="form-check-label" for="actionCheckbox">Action</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="romcomCheckbox" name="movieGenre"
+                            value="rom-com">
+                        <label class="form-check-label" for="romcomCheckbox">Rom-Com</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="romancedramaCheckbox" name="movieGenre"
+                            value="romance-drama">
+                        <label class="form-check-label" for="romancedramaCheckbox">Romance-Drama</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-3">Register</button>
+            </form>
+        </fieldset>
+    </div>
+    <script src="../js/controller/register_controller.js" type="module"></script>
+</body>
+
+</html>

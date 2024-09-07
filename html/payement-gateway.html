@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Interface</title>
+    <script src="https://kit.fontawesome.com/9c5b68bb17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/payement-gateway.css">
+    <script src="../js/plugins/all_cdn.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <p>Payment Methods</p>
+            <hr style="border: 1px solid black; margin: 0 15px;">
+            <div class="methods">
+                <div id="pay-on-venue" onclick="payOnVenue()">
+                    <i class="fa-solid fa-house"></i>
+                    Payment on venue
+                </div>
+                <div onclick="doFunA()" id="first">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payment by card
+                </div>
+                <div onclick="doFunB()" id="second">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Internet Banking
+                </div>
+                <div onclick="doFunC()" id="third">
+                    <i class="fa-solid fa-wallet"></i>
+                    Apple/Google Pay
+                </div>
+            </div>
+            <hr style="border: 1px solid black; margin: 0 15px;">
+        </div>
+        <div class="center">
+
+            <img alt="Credit Card Logos"
+                    title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4_b.png"
+                    width="250" height="auto" />
+            <hr style="border: 1px solid black; margin: 0 15px;">
+            <div class="payOnVenue">
+                <p>Your Total amount is :</p>
+                <button onclick="openpov()">Pay On Venue</button>
+                <div class="popup" id="popupPOV" style="text-align: center;">
+                    <h2>Thank You!</h2>
+                    <p>Thank you for your patience. We are anxiously waiting for your presence. Payment through UPI and Net banking is also available over here.</p>
+                    <button type="button" id="submit-btn" onclick="closepov()">OK</button>
+                </div>
+            </div>
+            <div class="card-box">
+                <form action="">
+                    <p>Card Number</p>
+                    <div class="c-number" id="c-number">
+                        <input type="" class="card-number" id="card-number" placeholder="Card Number" maxlength="16"
+                            required>
+                        <i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+                    </div>
+                    <div class="c-details">
+                        <div>
+                            <p>Expiry Date</p>
+                            <input type="" id="card-date" class="card-date" placeholder="MM/YY" required maxlength="5">
+                        </div>
+                        <div>
+                            <p>CVV</p>
+                            <div class="c-cvv" id="c-cvv">
+                                <input type="password" class="card-cvv" id="card-cvv" placeholder="CVV" required maxlength="3">
+                                <i class="fa-solid fa-circle-question" title="3 digits at the back of your card"
+                                    style="cursor: pointer;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" name="" id="email" required placeholder="example@gmail.com">
+                    </div>
+                    <button onclick="openPopup()">PAY NOW</button>
+                    <div class="popup" id="popup" style="text-align: center;">
+                        <h2>Thank You!</h2>
+                        <p>Your payment is successful!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="net-banking">
+                <form action="">
+                    <div class="customer-id">
+                        <p>Customer Id</p>
+                        <input type="number" name="" id="customer-id" required placeholder="Your Customer ID">
+                    </div>
+                    <div class="password">
+                        <p>Password</p>
+                        <input type="password" name="" id="password" required placeholder="Password">
+                    </div>
+                    <button onclick="openPopupN()">PAY NOW</button>
+                    <div class="popup" id="popupN" style="text-align: center;">
+                        <h2>Thank You!</h2>
+                        <p>Your payment is successful!</p>
+                        <button type="button" onclick="closePopupN()">OK</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="upi">
+                <form action="">
+                    <div class="upi-id">
+                        <p>UPI Id</p>
+                        <input type="number" name="" id="upi-id" required placeholder="Your UPI ID">
+                    </div>
+                    <div class="password">
+                        <p>Password</p>
+                        <input type="password" name="" id="upi-password" required placeholder="Password">
+                    </div>
+                    <button onclick="openPopupU()">PAY NOW</button>
+                    <div class="popup" id="popupU" style="text-align: center;">
+                        <h2>Thank You!</h2>
+                        <p>Your payment is successful!</p>
+                        <button type="button" onclick="closePopupU()">OK</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="right">
+            <p>Order Information</p>
+            <hr style="border: 1px solid black; margin: 0 15px">
+            <div class="details">
+                <div style="font-weight: bold; padding: 3px 0;">Order Description</div>
+                <div style="padding: 3px 0;">Test Payment</div>
+            </div>
+            <hr style="border: 1px solid black; margin: 0 15px">
+            <img alt="Credit Card Logos"
+                    title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4_b.png"
+                    width="250" height="auto" />
+        </div>
+
+    </div>
+
+    <script src="../js/controller/payement-gateway.js"></script>
+    <script src="../js/controller/add_order_details_controller.js" type="module"></script>
+</body>
+
+</html>

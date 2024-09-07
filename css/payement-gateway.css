@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.left{
+    width: 25%;
+    font-weight: bold;
+}
+.left p{
+    padding: 30px 20px;
+}
+.methods{
+    padding: 10px 0;
+}
+.methods div{
+    padding: 7px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.methods div:hover{
+    box-shadow: 0 0 10px grey ;
+}
+.methods div::after{
+    content: '';
+    display: inline-block;
+    color: green;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-left-color: var(--fondy-success);
+    margin-left: 10px;
+}
+.fa-solid{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.center{
+    width: 50%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 70vh;
+}
+.center img{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 25%;
+}
+.right p{
+    padding: 30px 20px;
+    font-weight: bold;
+
+}
+.details{
+    padding: 20px 20px;
+}
+.right img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.card-box{
+    padding: 20px 80px;
+}
+.card-box .c-number{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 12px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.c-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card-date{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 12px;
+    width: 150px;
+}
+.c-details .c-cvv{
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 12px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+}
+.card-cvv{
+    width: 60px;
+}
+.email input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 12px;
+    height: 50px;
+    margin-top: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: blue;
+    background-color: bisque;
+}
+button:hover{
+    color: beige;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.popup{
+    width: 400px;
+    background: whitesmoke;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: blue;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+.net-banking, .upi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+
+}
+.net-banking input, .upi input{
+    width: 100%;
+    margin: 10px 0;
+    border: 0.1px solid black;
+    border-radius: 6px;
+    height: 50px;
+}
+.payOnVenue{
+    padding: 50px;
+}
+.payOnVenue p{
+    font-size: 30px;
+}
+.upi{
+    display: none;
+}
+.net-banking{
+    display: none;
+}
+.card-box{
+    display: none;
+}

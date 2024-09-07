@@ -1,0 +1,41 @@
+.carousel-images {
+
+    /* width: 800px; */
+    height: 550px;
+    opacity: 0.9;
+
+}
+
+.carousel-sports {
+
+    margin-top: 2%;
+}
+
+.recommended-sports {
+
+    margin-top: 5%;
+    /* border: 2px solid crimson; */
+}
+
+.cards-container {
+
+    /* border: 2px solid black; */
+    margin: 2%;
+}
+
+.card {
+
+    margin: 1%;
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-images {
+
+    width: 17rem;
+    height: 21rem;
+}

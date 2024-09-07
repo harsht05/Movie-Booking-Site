@@ -1,0 +1,85 @@
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);}
+.meal-details {
+    display: flex;
+    align-items: center;
+}
+
+.meal-img {
+    width: 250px;
+    height: 180px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.109);
+    
+
+}
+
+.summary {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-left: 20px;
+    /* width: 300px; Match the card width */
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-bar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-bar button {
+    width: 30px;
+    height: 30px;
+    margin-top: 5%;
+}
+
+@media (max-width: 767px) {
+    .meal-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .meal-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height */
+    }
+
+    .quantity-bar {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .summary {
+        position: sticky;
+        top: 20px;
+    }
+}
+
+.heading{
+    margin-bottom: 20px;
+    border: 2px solid rgba(234, 234, 234, 0);
+    box-shadow: 5px 5px 5px 5px rgba(211, 211, 211, 0.218);
+}

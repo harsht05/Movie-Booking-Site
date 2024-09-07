@@ -1,0 +1,74 @@
+body {
+    height: 100%;
+    background-color: #ecf0f1; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff; /* White container background */
+    padding: 25px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.field h1 {
+    text-align: center;
+    color: #3498db; /* Blue heading color */
+}
+
+.user-pass {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.username, .password {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px; /* Add some space between input fields */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71; /* Green button background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+.error {
+    color: #e74c3c; /* Red error text color */
+    margin: 5px 0;
+}
+
+.btn-flex {
+    display: flex;
+  
+    gap: 10px; /* Add some space between buttons */
+    justify-content: space-between;
+}
+.sub{
+    width: 150px;
+}
+
+
+.reg {
+    background-color: #3498db; /* Blue button background for Sign Up */
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <link rel="stylesheet" href="../css/movie-booking-info.css">
+    <script src="../js/plugins/all_cdn.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2nd Navbar contents: tabs link such as movies, sports, concerts, drama...... -->
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../html/dashboard-movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../html/dashboard-sports.html">Sports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Drama</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid banner-img">
+        
+    </div>
+
+    <div class="container">
+
+        <p class="fs-1 fw-bold text-center movie-name"></p>
+
+    </div>
+
+    <div class="container content">
+        <p class="fs-2 fw-bolder">About the movie</p>
+        <p class="fs-5 fw-light movie-about"></p>
+
+        <div class="container d-flex justify-content-center button-container">
+ 
+        </div>
+        <hr>
+    </div>
+    
+    <div class="container"><p class="fs-2 fw-bolder">Cast</p></div>
+
+    <div class="container d-flex justify-content-center gap-4 flex-row flex-wrap cast-details">
+
+        <div class="cast actor" id="cast">
+            
+            <div class="actor-img" id="toggleImage">
+                
+            </div>
+
+            <div id="hiddenContent" class="container-fluid hidden">
+                <div class="info">
+                    <p class="fs-5 fw-light actor-born">Born : </p>
+                    <p class="fs-5 fw-light actor-place">Native Place : </p>
+                    <p class="fs-5 fw-light actor-nickname">Also Known as : </p>
+                    <p class="fs-5 fw-light actor-about">About: </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cast actress" id="cast1">
+            
+            <div class="actress-img" id="toggleImage1">
+                
+            </div>
+
+            <div id="hiddenContent1" class="container-fluid hidden">
+                <div class="info">
+                    <p class="fs-5 fw-light actress-born">Born : </p>
+                    <p class="fs-5 fw-light actress-place">Native Place : </p>
+                    <p class="fs-5 fw-light actress-about">About: </p>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../js/controller/movie_booking_info_controller.js" type="module"></script>
+    <script src="../js/controller/artist.js"></script>
+</body>
+</html>
